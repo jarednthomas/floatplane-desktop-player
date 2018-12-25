@@ -54,13 +54,7 @@ const template = [
         label: c.menu.window.minimize,
         accelerator: 'CmdOrCtrl+M',
         role: 'minimize'
-      },
-      // WindowClose
-      {
-        label: c.menu.window.close,
-        accelerator: 'CmdOrCtrl+W',
-        role: 'close'
-      },
+      }
     ]
   }
 ];
@@ -92,7 +86,7 @@ const template = [
           label: c.menu.app.hideothers,
           accelerator: 'Command+Shift+H',
           role: 'hideothers'
-        }, 
+        },
         {
           label: c.menu.app.unhide,
           role: 'unhide'
