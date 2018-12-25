@@ -122,14 +122,14 @@ const template = [
         {
           // Settings MenuEntry
           label: "My Account",
-          accelerator: 'Ctrl+A',
+          accelerator: 'CmdOrCtrl+A',
           click: function() { mainWindow.loadCustomUrl(c.settings.appUrlAccount); }
 
         },
         {
           // File MenuEntry
           label: c.menu.app.quit,
-          accelerator: 'Ctrl+Q',
+          accelerator: 'CmdOrCtrl+Q',
           click: function() { app.quit();}
         },
       ]
