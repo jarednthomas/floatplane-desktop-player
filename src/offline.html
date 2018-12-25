@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Offline</title>
+        <link href="res/css/base.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="offline" class="flex-container">
+            <div id="refresh" class="flex-center">
+                <img src="res/images/offline.svg" title="Offline" />
+                <p class="large">Please Check Your Internet Connection.</p>
+                <p>Try Again?</p>
+            </div>
+        </div>
+
+        <script>
+            var refresh = document.querySelector('#refresh');
+            refresh.addEventListener('click', function () {
+                window.ipcRenderer.send('app:refresh');
+            });
+        </script>
+    </body>
+</html>

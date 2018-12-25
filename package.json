@@ -1,0 +1,102 @@
+{
+  "name": "floatplane-desktop-player",
+  "productName": "Floatplane Desktop Player",
+  "description": "Unofficial Desktop App for Floatplane",
+  "repository": "https://github.com/jarednthomas/TBA",
+  "version": "0.0.1",
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "jarednthomas",
+    "email": "jarednthomas@protonmail.com"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "jshint main.js",
+    "electron": "electron .",
+    "start": "./node_modules/.bin/electron .",
+    "icon-gen": "electron-icon-maker --input=./src/res/images/icon_1024.png --output=./build",
+    "generate": "yarn icon-gen",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "./node_modules/.bin/electron-builder build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-builder": "^19.56.2",
+    "electron-icon-maker": "0.0.4",
+    "jshint": "^2.9.7"
+  },
+  "dependencies": {
+    "7zip-bin": "^4.1.0",
+    "ajv": "^5.0.0",
+    "electron-prefs": "^1.0.5",
+    "lint": "^1.1.2"
+  },
+  "files": [
+    "*.js",
+    "src",
+    "node_modules"
+  ],
+  "build": {
+    "appId": "com.jarednthomas.torpedo",
+    "productName": "Torpedo",
+    "copyright": "",
+    "mac": {
+      "category": "public.app-category.video",
+      "target": [
+        {
+          "target": "dmg"
+        },
+        {
+          "target": "mas"
+        }
+      ],
+      "icon": "build/icon.icns"
+    },
+    "dmg": {},
+    "mas": {},
+    "win": {
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ],
+      "icon": "build/icon.ico",
+      "legalTrademarks": "",
+      "publisherName": ""
+    },
+    "nsis": {
+      "oneClick": false,
+      "runAfterFinish": false,
+      "allowElevation": true
+    },
+    "appx": {
+      "applicationId": "Torpedo",
+      "backgroundColor": "#00aeef",
+      "displayName": "Torpedo",
+      "identityName": "Torpedo",
+      "publisher": "CN=84BS2BSF-0BS6-4BS5-8BS3-11BSF795E8E1",
+      "publisherDisplayName": "jarednthomas",
+      "languages": [
+        "en"
+      ]
+    },
+    "portable": {},
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage"
+        }
+      ],
+      "icon": "build/icons/png",
+      "maintainer": "jarednthomas",
+      "vendor": "jarednthomas",
+      "synopsis": "Unofficial Floatplane Desktop App",
+      "category": "AudioVideo"
+    },
+    "appImage": {
+      "systemIntegration": "ask"
+    }
+  }
+}
