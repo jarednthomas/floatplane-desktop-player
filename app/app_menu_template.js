@@ -52,7 +52,6 @@ const template = [
       // MinimizeButton
       {
         label: c.menu.window.minimize,
-        accelerator: 'CmdOrCtrl+M',
         role: 'minimize'
       }
     ]
