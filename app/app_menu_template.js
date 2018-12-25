@@ -42,17 +42,17 @@ const template = [
     role: 'window',
     submenu: [
 
+      // MinimizeButton
+      {
+        label: c.menu.window.minimize,
+        role: 'minimize'
+      },
+
       // Show/Hide
       {
         label: 'Hide',
         accelerator: 'CmdOrCtrl+H',
         role: 'close'
-      },
-
-      // MinimizeButton
-      {
-        label: c.menu.window.minimize,
-        role: 'minimize'
       }
     ]
   }
