@@ -39,8 +39,8 @@
     "node_modules"
   ],
   "build": {
-    "appId": "com.jarednthomas.torpedo",
-    "productName": "Torpedo",
+    "appId": "com.jarednthomas.fpdp",
+    "productName": "Floatplane Desktop Player",
     "copyright": "",
     "mac": {
       "category": "public.app-category.video",
@@ -72,10 +72,10 @@
       "allowElevation": true
     },
     "appx": {
-      "applicationId": "Torpedo",
+      "applicationId": "Floatplane Desktop Player",
       "backgroundColor": "#00aeef",
-      "displayName": "Torpedo",
-      "identityName": "Torpedo",
+      "displayName": "Floatplane",
+      "identityName": "Floatplane",
       "publisher": "CN=84BS2BSF-0BS6-4BS5-8BS3-11BSF795E8E1",
       "publisherDisplayName": "jarednthomas",
       "languages": [
