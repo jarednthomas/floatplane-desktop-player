@@ -16,7 +16,7 @@ const Constants = {
     themeColor: '#00aeef',
     titleBarStyle: 'hidden',
     showLoader: false,
-    frame: false,
+    frame: true,
     usePhotonKitShell: false,
     useWindowsShell: false,
     useLinuxShell: false,
